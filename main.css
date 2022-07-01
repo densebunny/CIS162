@@ -8,6 +8,8 @@ header{background-color:aquamarine;
 h1{color:cornflowerblue;
     font-size:3em;}
 
+h2{color:darkslateblue;}
+
 nav > ul{line-height:2em;
         list-style-type: none;
         padding-left:20px;
