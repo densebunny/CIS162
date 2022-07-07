@@ -1,28 +1,77 @@
 body {background-color:teal;
-font-family: serif;}
+    font-family: serif;
+    width: 95%;
+    max-width: 960px;
+    min-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 header{background-color:aquamarine;
-        width:90%;
         padding-left:20px;}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+nav li {float: left;}
+
+nav li a {
+    display: block;
+    color: darkcyan;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+nav li a:hover {background-color: darkturquoise;}
 
 h1{color:cornflowerblue;
     font-size:3em;}
 
 h2{color:darkslateblue;}
 
-nav > ul{line-height:2em;
-        list-style-type: none;
-        padding-left:20px;
-        background-color:aqua;
-        width:90%;}
+section#leftColumn{background-color:darkturquoise;
+        font-size:1.2em;}
 
-section {background-color:aliceblue;
-        width:90%;
-        font-size:1.2em;
-        padding-left:20px;
-        padding-bottom:5px;}
+section#rightColumn{background-color:aquamarine;
+        font-size:1.2em;}
 
-footer{background-color:azure;
-        width:90%;
+footer{background-color:aquamarine;
         font-size:1em;
         padding-left:20px;}
+
+section#leftColumn{
+    float: left;
+    clear: left;
+    width: 45%;
+    padding-left: 15px;
+}
+
+section#rightColumn{
+    float: left;
+    width: 50%;
+    padding-right:18px;
+    padding-bottom:25px;
+    padding-left:10px;
+}
+
+footer section#contactInfo{
+    float: left;
+    width: 100%
+}
+
+section#leftColumn img{
+    display: block;
+    width: auto;
+}
+
+body > footer::after{
+    clear: both;
+    content:"";
+    display: table;
+}
